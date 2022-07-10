@@ -87,13 +87,13 @@ const createWaroengkuDetailTemplate = (resto) => `
     </div>
     <div class="form-review">
     <p class="judul-subreview">Send Feedback</p>
-    <form method="post">
+    <form>
       <input type="hidden" value="${resto.id}" id="id-resto"/>
       <label for="name">Name</label>
       <input id="name" type="text" required/>
       <label for="message">Message</label>
       <textarea id="message" required></textarea>
-      <button type="submit">
+      <button id="submit-ulasanviewer" type="submit">
         <span class="sending d-none"><div></div> Sending...</span>
         <span class="netral">Submit</span>
       </button>
