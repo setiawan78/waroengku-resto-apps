@@ -1,0 +1,26 @@
+.profile-card {
+	width: 500px;
+	text-align: justify;
+	border-radius: 10px;
+	transition: 0.3s;
+	background-color: #ffffff;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  	overflow: hidden;
+  }
+  
+  .profile-card:hover {
+	box-shadow: 10px 10px 5px 0 #f0e3ca;
+  }
+
+  .img-thumb {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	max-height: 600px;
+  }
+
+  .bio-profile {
+	padding: 1.4em 2em;
+	font-size: small;
+	text-align: center;
+  }
