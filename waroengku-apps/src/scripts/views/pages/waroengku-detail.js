@@ -34,17 +34,9 @@ const PageDetail = {
     const btnSubmitReview = document.querySelector('#submit-ulasanviewer');
     const Inputname = document.querySelector('#inp-nama');
     const Inputulasan = document.querySelector('#inp-ulasan');
-    btnSubmitReview.addEventListener('click', async (e) => {
+    btnSubmitReview.addEventListener("click", (e) => {
       e.preventDefault();
-      console.log(Inputname);
-      console.log(Inputulasan);
-      console.log(url);
-      console.log(Inputname.value);
-      console.log(Inputulasan.value);
-      await sendReview(url, Inputname.value, Inputulasan.value);
-
-      Inputname.value = '';
-      Inputulasan.value = '';
+      sendReview();
     });
   },
 };

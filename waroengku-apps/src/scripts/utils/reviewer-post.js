@@ -1,17 +1,14 @@
 import WaroengkuDbSource from '../data/waroengku-dbsource';
+import { createWaroengkuDetailTemplate } from "../views/templates/template-creator";
 
-const sendReview = async (element) => {
-  const id = element.querySelector('#id-resto').value;
-  const name = element.querySelector('#name').value;
-  const review = element.querySelector('#message').value;
-  const loadingElement = {
-    sending: element.querySelector('.sending'),
-    netral: element.querySelector('.netral'),
-  };
+const sendReview = async () => {
+  const id = document.querySelector('#id-resto').value;
+  const name = document.querySelector('#name').value;
+  const review = document.querySelector('#message').value;
+  
   const body = { id, name, review };
 
-  const response = await WaroengkuDbSource.review(body, loadingElement);
-  afterSending(response, element);
+  const response = await WaroengkuDbSource.reviewWaroengs(body);
   return response;
 };
 
